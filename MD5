@@ -1,0 +1,11 @@
+7198521839e87cc98c92d435c15a8238 *DESCRIPTION
+917fecbad4c75fa92566d227b4c840cb *NAMESPACE
+30cb2030a144f1c1b75adfb306848c00 *NEWS.md
+f6a2a104ffbb4b7f6f7bd55c0cf544f6 *R/make.R
+ddd40a81239ccb2526e0eaaa49df8daf *inst/examples/analysis/analysis.R
+7ef3a6dbcf22dfb1f0a778f9b50f1a81 *inst/examples/analysis/input.dat
+73d0944341d219916911ae4cfdd71ec6 *inst/examples/sequential/01_model.R
+058de49efe65bff3a8c2d7a67c85fd5c *inst/examples/sequential/02_plots.R
+9a134899442e23495fcc46e932b3b378 *inst/examples/sequential/03_tables.R
+7ef3a6dbcf22dfb1f0a778f9b50f1a81 *inst/examples/sequential/data.dat
+610ec20a9aef38795adb2e22038c496a *man/make.Rd
