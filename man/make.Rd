@@ -6,15 +6,15 @@
 \title{Run R Script if Needed}
 \usage{
 make(recipe, prereq, target, include = TRUE, details = FALSE,
-  force = FALSE, recon = FALSE, silent = FALSE, ...)
+  force = FALSE, recon = FALSE, quiet = FALSE, ...)
 }
 \arguments{
 \item{recipe}{script filename.}
 
-\item{prereq}{one or more underlying files, required by the script. For
-example, data files and/or scripts.}
+\item{prereq}{one or more files required by the script. For example, data
+files, scripts, or \code{NULL}.}
 
-\item{target}{one or more output files, produced by the script. Directory
+\item{target}{one or more output files produced by the script. Directory
 names can also be used.}
 
 \item{include}{whether to automatically include the script itself as a
@@ -29,7 +29,7 @@ modified.}
 \item{recon}{whether to return \code{TRUE} or \code{FALSE}, without actually
 running the R script.}
 
-\item{silent}{whether to suppress messages.}
+\item{quiet}{whether to suppress messages.}
 
 \item{\dots}{passed to \code{source}.}
 }
@@ -56,7 +56,7 @@ file.copy(system.file("examples/sequential", package="makeit"),
           exdir, recursive=TRUE)
 owd <- getwd()
 
-# Here, analysis.R uses input.dat, creating output.dat
+# This analysis uses input.dat to produce output.dat
 setwd(file.path(exdir, "analysis"))
 dir()
 make("analysis.R", "input.dat", "output.dat")  # Running analysis.R
@@ -64,7 +64,7 @@ dir()
 make("analysis.R", "input.dat", "output.dat")  # Nothing to be done
 
 # Suppress message, show last modified
-make("analysis.R", "input.dat", "output.dat", silent=TRUE)
+make("analysis.R", "input.dat", "output.dat", quiet=TRUE)
 make("analysis.R", "input.dat", "output.dat", details=TRUE)
 
 # Sequential scripts
@@ -78,14 +78,20 @@ print.simple.list(dir(recursive=TRUE))
 # Clean up
 unlink(file.path(exdir, c("analysis", "sequential")), recursive=TRUE)
 setwd(owd)
+
+# See vignette("makeit") for more examples and discussion
 }
 
 }
 \references{
-Stallman, R. M. \emph{et al.} An introduction to makefiles. Chapter 2 in the
-\emph{\href{https://www.gnu.org/software/make/manual/}{GNU Make manual}}.
+Stallman, R. M. \emph{et al}.
+An introduction to makefiles.
+Chapter 2 in the \emph{\href{https://www.gnu.org/software/make/manual/}{GNU
+Make manual}}.
 }
 \seealso{
+See \code{vignette("makeit")} for annotated examples and discussion.
+
 \code{\link{file.exists}} and \code{\link{file.mtime}} are the underlying
 functions used to check if files are missing or have changed.
 
