@@ -1,11 +1,11 @@
-2b349c2a2b3a962818ba693f086a4a89 *DESCRIPTION
+4fb54130e8726495cb2dd282df32c33d *DESCRIPTION
 917fecbad4c75fa92566d227b4c840cb *NAMESPACE
-a948834a1257eb267c76af1bc494450d *NEWS.md
-243ae6f65257f168f24ecefaf465246a *R/make.R
-002bfae1f8921dede0feb7620e10bb72 *build/vignette.rds
+5bc45622a871964b802fab0ac680f0d8 *NEWS.md
+bd2fd9fb8afd61cb58ec0341aaea5aba *R/make.R
+affa5b8698f6ee2ad2b22861ff0c176a *build/vignette.rds
 02ad2e37b622f0001b80e1de5e283a9e *inst/doc/makeit.R
-ceac92d9643c28b056e6e65d40074aa6 *inst/doc/makeit.Rmd
-5e8ce5c26332e662a9f8ea535ec6ea26 *inst/doc/makeit.html
+fee2a2ce24697740e5d81a4b1a169d9c *inst/doc/makeit.Rmd
+ca0ddc2eca54cb3ab533896d8be72953 *inst/doc/makeit.html
 ddd40a81239ccb2526e0eaaa49df8daf *inst/examples/analysis/analysis.R
 7ef3a6dbcf22dfb1f0a778f9b50f1a81 *inst/examples/analysis/input.dat
 1409391d0f1195bb70a10e158d8adf14 *inst/examples/dag_targets.png
@@ -32,5 +32,5 @@ f8b14c655ad6841033d0f15c61ea84b9 *inst/examples/sequential/02_plots.R
 e38f5d74d0776e760fa5a5b1e839e8e4 *inst/examples/sequential/03_tables.R
 7d48c4f503bc9ab8e986e6360f9063ef *inst/examples/sequential/_make.R
 7ef3a6dbcf22dfb1f0a778f9b50f1a81 *inst/examples/sequential/data.dat
-344167ebfe31a665d3c181fc84e571dd *man/make.Rd
-ceac92d9643c28b056e6e65d40074aa6 *vignettes/makeit.Rmd
+85f2d7137746813bd17e472877e22b48 *man/make.Rd
+fee2a2ce24697740e5d81a4b1a169d9c *vignettes/makeit.Rmd
